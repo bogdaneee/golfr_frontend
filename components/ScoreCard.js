@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const CONFIRM_MESSAGE = 'Are you sure you want to delete the score?'
 
-const ScoreCard = ({ id, playedAt, totalScore, numberOfHoles, userId, userName }) => {
+const ScoreCard = ({ id, playedAt, totalScore, userId, userName }) => {
   const { deleteScore } = useScoreDelete(id)
 
   return (
