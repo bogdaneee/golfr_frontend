@@ -20,9 +20,6 @@ const ScoreCard = ({ id, playedAt, totalScore, numberOfHoles, userId, userName }
           </Link>
           {` posted a score of ${totalScore}`}
         </div>
-        <div>
-          {`Category: ${numberOfHoles} holes` }
-        </div>
       </div>
       <div className="w-1/6">
         <div className="flex items-center justify-center h-full w-full">
