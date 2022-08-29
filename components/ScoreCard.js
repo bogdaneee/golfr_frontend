@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const CONFIRM_MESSAGE = 'Are you sure you want to delete the score?'
 
-const ScoreCard = ({ id, playedAt, totalScore, userId, userName }) => {
+const ScoreCard = ({ id, playedAt, totalScore, numberOfHoles, userId, userName }) => {
   const { deleteScore } = useScoreDelete(id)
 
   return (
@@ -19,6 +19,9 @@ const ScoreCard = ({ id, playedAt, totalScore, userId, userName }) => {
             {`${userName}`}
           </Link>
           {` posted a score of ${totalScore}`}
+        </div>
+        <div>
+          {`Category: ${numberOfHoles} holes`}
         </div>
       </div>
       <div className="w-1/6">
